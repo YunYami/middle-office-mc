@@ -1,0 +1,23 @@
+{
+    "name": "gupo/middle-office-mc",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gupo\\MiddleOfficeMc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wumeng",
+            "email": "wumeng@gupo.onaliyun.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "gupo/middle-office": "1.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.10"
+    }
+}
