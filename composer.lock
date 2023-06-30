@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "382ab4718d3696919afc7b6710c524ac",
+    "content-hash": "4a3b746efdf96ba611e75d36523a5796",
     "packages": [
         {
             "name": "cloudladder/http",
@@ -52,16 +52,16 @@
         },
         {
             "name": "gupo/middle-office",
-            "version": "v1.0",
+            "version": "v1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/YunYami/middle-office.git",
-                "reference": "6842cd78f8172f9389a0c2761384760aff8b9037"
+                "reference": "3c22d3af7f276b54ef0c068c7630cad988f64b49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/YunYami/middle-office/zipball/6842cd78f8172f9389a0c2761384760aff8b9037",
-                "reference": "6842cd78f8172f9389a0c2761384760aff8b9037",
+                "url": "https://api.github.com/repos/YunYami/middle-office/zipball/3c22d3af7f276b54ef0c068c7630cad988f64b49",
+                "reference": "3c22d3af7f276b54ef0c068c7630cad988f64b49",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -96,9 +96,9 @@
             "description": "gupo openapi service",
             "support": {
                 "issues": "https://github.com/YunYami/middle-office/issues",
-                "source": "https://github.com/YunYami/middle-office/tree/v1.0"
+                "source": "https://github.com/YunYami/middle-office/tree/v1.2.4"
             },
-            "time": "2023-06-28T09:18:26+00:00"
+            "time": "2023-06-30T08:38:52+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
