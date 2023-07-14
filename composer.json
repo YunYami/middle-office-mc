@@ -14,16 +14,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "config": {
-        "sort-packages": true,
-        "preferred-install": "dist",
-        "optimize-autoloader": true
-    },
-    "dist": {
-        "url": "https://gp-temp-storage.oss-cn-hangzhou.aliyuncs.com/bmo-notice-api/master/v0/k8aDEyl5AWoLxKcqhLkUbMwVRr2TytUrsGMS2Da3.zip",
-        "type": "zip"
-    },
     "require": {
-        "gupo/middle-office": "~1.4.0"
+        "gupo/middle-office": "~1.4.2"
     }
 }

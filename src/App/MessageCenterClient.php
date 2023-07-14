@@ -114,4 +114,23 @@ class MessageCenterClient extends Client
 
         return $this->callApiPost($header->getHeader($headerExtra), $body, $endpoint . 'openapi/v1/message/send-batch-diff');
     }
+
+    /**
+     * 批量发送同一模板相同消息
+     *
+     * @param $body
+     * @param $endpoint
+     * @param  array  $headerExtra
+     * @return mixed
+     * @throws ClientException
+     * @throws GuzzleException
+     * @author Wumeng wumeng@gupo.onaliyun.com
+     * @since 2023-07-13 14:06
+     */
+    public function sendBatchSameMsg($body, $endpoint, array $headerExtra = [])
+    {
+        $header = new RequestHeader($this->config, $body, $this->config->appId);
+
+        return $this->callApiPost($header->getHeader($headerExtra), $body, $endpoint . 'openapi/v1/message/send-batch-same');
+    }
 }
