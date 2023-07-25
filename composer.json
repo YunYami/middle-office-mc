@@ -15,6 +15,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "gupo/middle-office": "~1.4.2"
+        "gupo/middle-office": "~1.4.4"
     }
 }

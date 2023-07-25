@@ -133,4 +133,70 @@ class MessageCenterClient extends Client
 
         return $this->callApiPost($header->getHeader($headerExtra), $body, $endpoint . 'openapi/v1/message/send-batch-same');
     }
+
+    /**
+     * 获取站内信消息详情
+     *
+     * @param $uuid
+     * @param $channelUserSign
+     * @param $endpoint
+     * @param  array  $headerExtra
+     * @param  array  $extra
+     * @return mixed
+     * @throws ClientException
+     * @throws GuzzleException
+     * @author Wumeng wumeng@gupo.onaliyun.com
+     * @since 2023-07-25 10:21
+     */
+    public function getInternalMsgDetail($uuid, $channelUserSign, $endpoint, array $headerExtra = [], array $extra = [])
+    {
+        $body = array_merge(['channel_user_sign' => $channelUserSign, 'uuid' => $uuid], $extra);
+        $header = new RequestHeader($this->config, $body, $this->config->appId);
+
+        return $this->callApiPost($header->getHeader($headerExtra), $body, $endpoint . 'openapi/v1/message/detail');
+    }
+
+    /**
+     * 获取站内信消息数量
+     *
+     * @param $channelUserSign
+     * @param $endpoint
+     * @param  array  $headerExtra
+     * @param  array  $extra
+     * @return mixed
+     * @throws ClientException
+     * @throws GuzzleException
+     * @author Wumeng wumeng@gupo.onaliyun.com
+     * @since 2023-07-25 10:23
+     */
+    public function getInternalMsgCount($channelUserSign, $endpoint, array $headerExtra = [], array $extra = [])
+    {
+        $body = array_merge(['channel_user_sign' => $channelUserSign], $extra);
+        $header = new RequestHeader($this->config, $body, $this->config->appId);
+
+        return $this->callApiPost($header->getHeader($headerExtra), $body, $endpoint . 'openapi/v1/message/count');
+    }
+
+    /**
+     * 站内信消息变更状态为已读
+     *
+     * @param $channelUserSign
+     * @param $batchUuid
+     * @param $clearAll
+     * @param $endpoint
+     * @param  array  $headerExtra
+     * @param  array  $extra
+     * @return mixed
+     * @throws ClientException
+     * @throws GuzzleException
+     * @author Wumeng wumeng@gupo.onaliyun.com
+     * @since 2023-07-25 10:42
+     */
+    public function readInternalMsg($channelUserSign, $batchUuid, $clearAll, $endpoint, array $headerExtra = [], array $extra = [])
+    {
+        $body = array_merge(['channel_user_sign' => $channelUserSign, 'batch_uuid' => $batchUuid, 'clear_all' => $clearAll], $extra);
+        $header = new RequestHeader($this->config, $body, $this->config->appId);
+
+        return $this->callApiPost($header->getHeader($headerExtra), $body, $endpoint . 'openapi/v1/message/read-msg');
+    }
 }

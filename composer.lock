@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "08701c4dd4cacc551ce389b50ceb37e7",
+    "content-hash": "093f2b427f76511297d1fe16da8671c4",
     "packages": [
         {
             "name": "cloudladder/http",
@@ -36,11 +36,11 @@
         },
         {
             "name": "gupo/middle-office",
-            "version": "v1.4.2",
+            "version": "v1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://e.coding.net/cloudladder/business-common/middle-office.git",
-                "reference": "c80be98f4c0f7d4ed42d68efe9edf001d236b4bb"
+                "reference": "be67ba9cff5755592c24ae02791660fa690154fd"
             },
             "require": {
                 "cloudladder/http": "~1.2.1",
@@ -70,7 +70,7 @@
                 }
             ],
             "description": "gupo openapi service",
-            "time": "2023-07-13T07:08:13+00:00"
+            "time": "2023-07-25T02:15:38+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
